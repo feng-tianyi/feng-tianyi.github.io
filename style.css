@@ -1,0 +1,98 @@
+.parent-About {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 13px auto;
+  grid-template-areas:
+    'header nav nav'
+    'border border border'
+    'main main picture'
+}
+
+.parent-Pub {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 13px auto;
+  grid-template-areas:
+    'header nav nav'
+    'border border border'
+    'main main main'
+}
+
+.header {
+  grid-area: header;
+  justify-self: start;
+  align-self: start;
+  padding: 30px 0;
+  font-size: 22px;
+}
+
+.nav {
+  grid-area: nav;
+  justify-self: end;
+  align-self: start;
+  padding: 30px 0;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-align: right;
+}
+
+.border {
+    grid-area: border;
+    border-bottom: 1.5px grey solid;
+}
+
+.picture {
+  grid-area: picture;
+  align-self: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+  grid-area: main;
+  padding-right: 15px;
+}
+
+
+body {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 0;
+  padding: 0 10px 25px;
+  font-family: "Bpmf Zihi Kai Std", sans-serif;
+  background-color: #fdfbfa;
+}
+
+a:link {
+  color: #95b126;
+  text-decoration: none
+}
+
+a:visited {
+  color: #95b126;
+  text-decoration: none
+}
+
+a:hover {
+  color: hotpink;
+}
+
+ol li {
+  padding: 5px;
+}
+
+address {
+    font-style: normal;
+}
+
+::selection {
+    background: #ffc0db;
+}
+
+::-moz-selection {
+    background: #ffc0db;
+}
