@@ -21,7 +21,7 @@
 @media screen and (max-width: 730px) {
   .parent-About {
     grid-template-columns: auto;
-    grid-template-rows: minmax(40px, auto) minmax(30px, auto) minmax(40px, auto) auto auto;
+    grid-template-rows: minmax(40px, auto) minmax(30px, auto) minmax(100px, auto) auto auto;
     grid-template-areas:
     "header"
     "nav"
@@ -43,7 +43,7 @@
     text-align: center;
     justify-self: center;
     align-self: center;
-    padding: 15px 0;
+    padding: 0px 0;
   }
   .nav a {
     margin: 0 10px;
