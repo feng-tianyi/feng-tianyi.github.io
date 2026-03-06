@@ -18,38 +18,6 @@
     'main main main'
 }
 
-@media screen and (max-width: 730px) {
-  .parent-About {
-    grid-template-columns: auto;
-    grid-template-rows: minmax(40px, auto) minmax(30px, auto) minmax(100px, auto) auto auto;
-    grid-template-areas:
-    "header"
-    "nav"
-    "border"
-    "picture"
-    "main"
-  }
-
-  .parent-Pub {
-    grid-template-columns: auto;
-    grid-template-rows: minmax(40px, auto) minmax(30px, auto) auto auto;
-    grid-template-areas:
-    "header"
-    "nav"
-    "border"
-    "main"
-  }
-  .header.nav {
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    padding: 0px 0;
-  }
-  .nav a {
-    margin: 0 10px;
-  }
-}
-
 .header {
   grid-area: header;
   justify-self: start;
@@ -71,13 +39,14 @@
 }
 
 .border {
-    grid-area: border;
-    border-bottom: 1.5px grey solid;
+  grid-area: border;
+  border-bottom: 1.5px grey solid;
 }
 
 .picture {
   grid-area: picture;
   align-self: center;
+  padding-top: 20px;
 }
 
 img {
@@ -127,4 +96,52 @@ address {
 
 ::-moz-selection {
     background: #ffc0db;
+}
+
+@media screen and (max-width: 650px) {
+  .parent-About {
+    grid-template-columns: auto;
+    grid-template-rows: minmax(40px, auto) minmax(30px, auto) auto auto auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "border"
+    "picture"
+    "main"
+  }
+
+  .parent-Pub {
+    grid-template-columns: auto;
+    grid-template-rows: minmax(40px, auto) minmax(30px, auto) auto auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "border"
+    "main"
+  }
+
+  .header {
+    justify-self: center;
+    padding: 20px 0 5px 0;
+  }
+
+  .nav {
+    justify-self: center;
+    padding: 15px 0 20px 0;
+  }
+
+  .nav a {
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  .picture {
+    display: grid;
+    place-items: center;
+  }
+
+  img {
+    max-width: 60%;
+}
+
 }
