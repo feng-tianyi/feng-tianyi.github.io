@@ -18,6 +18,36 @@
     'main main main'
 }
 
+@media screen and (max-width: 430px) {
+  .parent-About {
+    grid-template-columns: auto;
+    grid-template-rows: minmax(40px, auto) minmax(30px, auto) auto auto auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "border"
+    "picture"
+    "main"
+  }
+
+  .parent-Pub {
+    grid-template-columns: auto;
+    grid-template-rows: minmax(40px, auto) minmax(30px, auto) auto auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "border"
+    "main"
+  }
+  .header, nav {
+    text-align: center;
+    justify-self: center;
+  }
+  .nav a {
+    margin: 0 10px;
+  }
+}
+
 .header {
   grid-area: header;
   justify-self: start;
